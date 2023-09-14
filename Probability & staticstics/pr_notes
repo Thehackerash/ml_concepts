@@ -1,0 +1,282 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={probability and statistics},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{probability and statistics}
+\date{}
+
+\begin{document}
+\maketitle
+
+tags: {[}{]}
+
+\hypertarget{content}{%
+\subsubsection{Content}\label{content}}
+
+\begin{figure}
+\centering
+\includegraphics{Media/A-First-Course-in-Probability-8th-ed-Sheldon-Ross.pdf}
+\caption{A-First-Course-in-Probability-8th-ed.-Sheldon-Ross}
+\end{figure}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Axiom
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+For each event E of the sample space S, we define n(E) to be the number of times in the first n repetitions of the experiment that the event E occurs. Then P(E), the probability of the event E, is defined as 
+
+![image](Media/image.png)
+
+
+> axiom 1
+
+P(S) = 1
+
+> axiom 2 
+
+p(E) lies in 0 to 1 inclusive
+
+> axiom 3
+
+For any sequence of mutually exclusive events E1, E2, ... (that is, events for which EiEj = Ø when i Z j),
+
+![image](Media/image%20(1).png)
+\end{verbatim}
+
+mutually exclusive events : probability of occuring both events together
+is 0.
+
+\begin{quote}
+Propositions
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  if E is subset of F, then P(E) =\textless{} P(F)
+\item
+  P(E ∪ F) = P(E) + P(F) − P(EF)
+\item
+  For E1 ⊆ E2, P(E2 − E1) = P(E2) − P(E1);
+\end{enumerate}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Conditional Probability
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+---
+
+[image](https://app.capacities.io/d68e5c40-1cbd-4c74-8bad-cf86618335d6/6d593c67-b481-49b5-ba00-798f7c48067a)
+
+---
+
+
+
+---
+
+[image](https://app.capacities.io/d68e5c40-1cbd-4c74-8bad-cf86618335d6/1e9b96eb-8cfc-4c2c-aa82-fb791a838d4a)
+
+[image](https://app.capacities.io/d68e5c40-1cbd-4c74-8bad-cf86618335d6/3d976c7f-5478-433b-80c3-05dd724838ed)
+\end{verbatim}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Bayes formula
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+---
+
+ **P(A|B) = P(B|A) * P(A) / P(B)**
+
+![image](Media/image%20(2).png)
+
+---
+
+
+
+---
+
+event E is a weighted average of the conditional probability of E given that F has occurred and the conditional probability of E given that F has not occurred—each conditional probability being given as much weight as the event on which it is conditioned has of occurring.
+
+Ex 3g 3h
+
+Again, let F1,..., Fn be a set of mutually exclusive and exhaustive events (meaning that exactly one of these events must occur). Suppose now that E has occurred and we are interested in determining which one of the Fj also occurred. 
+
+![image](Media/image%20(3).png)
+\end{verbatim}
+
+independent events : P(E\textbar F) = P(EF)/P(F); P(EF) = P(E)P(F)
+
+Three events E, F, and G are said to be independent if P(EFG) =
+P(E)P(F)P(G) \textbar{} P(EF) = P(E)P(F) \textbar{} P(EG) = P(E)P(G)
+\textbar{} P(FG) = P(F)P(G)
+
+Note that if E, F, and G are independent, then E will be independent of
+any event formed from F and G
+
+EX - 4f 4g 4g
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Propositions in conditional probability
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+---
+
+(a) 0 … P(E|F) … 1. 
+
+(b) P(S|F) = 1.
+
+ (c) If Ei, i = 1, 2, ..., are mutually exclusive events, then
+
+![image](Media/image%20(4).png)
+
+EX - 5f
+
+
+---
+
+
+
+---
+\end{verbatim}
+
+P(H)/P(Hc) is called the odds of the event H
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  RANDOM VARIABLE
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+(S, Σ, P) be a probability space. Since P is a set function, it is not very easy to handle.
+
+A function X : S −→ R is called a random variable (RV) if X^−1 (B) ∈ Σ, for all B ∈ BR, that is, X−1 (B) = {w ∈ S : X(w) ∈ B} is an event.
+\end{verbatim}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Borel sigma algebra
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+(σ-algebra). A non-empty collection F of subsets of S is called a σ-algebra (or σ-field) if 
+
+(1) S ∈ F; 
+
+(2) A ∈ F ⇒ Ac ∈ F; 
+
+(3) A1, A2, . . . ∈ F ⇒ ∪∞ i=1Ai ∈ F.
+
+probability space
+
+1. If the sample space S is a finite or a countable set, then we will take Σ = P(S), where P(S) is the power set of S
+
+2.If the sample space S = R, then we will take the event space Σ = BR.
+
+3. P a probability function and the triple (S, Σ, P) is called the probability space .      
+\end{verbatim}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  Expected value
+\end{itemize}
+\end{quote}
+
+\begin{verbatim}
+. If X is a discrete random variable having a probability mass function p(x), then the expectation, or the expected value, of X, denoted by E[X], is defined by
+
+ the expected value of X is a weighted average of the possible values that X can take on, each value being weighted by the probability that X assumes it.
+
+![image](Media/image%20(5).png)
+
+The probability concept of expectation is analogous to the physical concept of the center of gravity of a distribution of mass.
+
+If X is a discrete random variable that takes on one of the values xi, i >= 1, with respective probabilities p(xi), then, for any real-valued function g,
+
+![image](Media/image%20(6).png)
+\end{verbatim}
+
+\end{document}
