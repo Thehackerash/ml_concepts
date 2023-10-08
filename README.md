@@ -6,3 +6,4 @@ this repo contains `machine learning` concepts which i am currenlty learning. Yo
 
 1. [[ai repo]]https://github.com/Thehackerash/Journey-With-Artificial-Intelligence
 2. kaggle courses
+3. youtube playlist(https://youtu.be/ySEx_Bqxvvo?si=kMISsOro1Ib0lSi8)
